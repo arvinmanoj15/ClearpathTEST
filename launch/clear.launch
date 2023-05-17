@@ -1,0 +1,9 @@
+<launch>
+
+  <node pkg="testing_one" name="example_publisher" type="example_publisher" output="screen"/>
+  
+  <node pkg="testing_one" name="deadman_switch" type="deadman_switch" output="screen"/>
+
+  node pkg="testing_one" name="cmd_vel_subscriber" type="cmd_vel_subscriber" output="screen"/>
+
+</launch>
