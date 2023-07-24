@@ -21,7 +21,7 @@ int main(int argc, char** argv)
     ros::NodeHandle nh;
 
     reference_height_pub = nh.advertise<std_msgs::Float64>("/reference_height", 10);
-    ros::Subscriber object_position_sub = nh.subscribe("/required_object_position/message", 10, obje>
+    ros::Subscriber object_position_sub = nh.subscribe("/required_object_position/message", 10, objectPositionCallback);
     
     ros::Rate rate(10);  // Specify the publishing rate (10 Hz in this example)
 
